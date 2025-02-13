@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "gpu-workload"
+version = "0.1.0"
+description = "Production-ready CUDA GPU benchmark tool for measuring and monitoring NVIDIA GPU performance through configurable matrix operations with real-time monitoring, safety features, and comprehensive metrics collection."
+authors = ["Pedro Cavalcanti <pedelano@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
