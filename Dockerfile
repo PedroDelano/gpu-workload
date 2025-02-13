@@ -1,5 +1,5 @@
 # Start with NVIDIA's CUDA Alpine base image
-FROM nvidia/cuda:12.8.0-cudnn-devel-ubuntu22.04
+FROM nvidia/cuda:12.2.2-base-ubuntu22.04
 
 # Install required system dependencies
 RUN apt-get update && apt-get install -y \
