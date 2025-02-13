@@ -44,32 +44,6 @@ docker run --gpus all \
     cuda-benchmark --size 8000 --iterations 100 --power 1.5 --monitor
 ```
 
-### Local Installation
-
-1. Clone the repository:
-```bash
-git clone https://github.com/yourusername/cuda-benchmark.git
-cd cuda-benchmark
-```
-
-2. Create and activate a virtual environment:
-```bash
-python -m venv venv
-source venv/bin/activate  # Linux/Mac
-# or
-.\venv\Scripts\activate  # Windows
-```
-
-3. Install dependencies:
-```bash
-pip install -r requirements.txt
-```
-
-4. Run the benchmark:
-```bash
-python cuda_benchmark.py --size 5000 --iterations 50 --monitor
-```
-
 ## Configuration
 
 ### Command Line Arguments
@@ -123,73 +97,3 @@ Results are saved in JSON format with the following structure:
     }
 }
 ```
-
-## Safety Features
-
-- Automatic shutdown if GPU temperature exceeds limit
-- GPU memory usage monitoring and limits
-- Graceful cleanup on termination
-- Signal handling (SIGINT, SIGTERM)
-
-## Development
-
-### Setup Development Environment
-
-```bash
-# Create virtual environment
-python -m venv venv
-source venv/bin/activate
-
-# Install development dependencies
-pip install -r requirements-dev.txt
-
-# Install pre-commit hooks
-pre-commit install
-```
-
-### Running Tests
-
-```bash
-pytest tests/
-pytest --cov=cuda_benchmark tests/
-```
-
-### Code Style
-
-This project follows the Black code style. Format your code using:
-
-```bash
-black .
-```
-
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Security
-
-For security concerns, please submit a detailed report to security@yourdomain.com or create a GitHub security advisory.
-
-## Support
-
-- 📚 Documentation: [docs/](docs/)
-- 🐛 Issue Tracker: [GitHub Issues](https://github.com/yourusername/cuda-benchmark/issues)
-- 💬 Discussions: [GitHub Discussions](https://github.com/yourusername/cuda-benchmark/discussions)
-
-## Acknowledgments
-
-- NVIDIA for CUDA toolkit
-- PyTorch team
-- Contributors and maintainers
-
----
-
-Made with ❤️ by [Your Name/Organization]
